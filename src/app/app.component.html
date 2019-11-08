@@ -1,0 +1,16 @@
+<nav>
+  <ul class="navigation">
+    <li class="navigation-item-left">
+      <h1 class="navigation-title">Where in the world?</h1>
+    </li>
+    <li class="navigation-item-right">
+      <button class="change-theme-button" (click)="toggleTheme()">
+        <fa-icon [icon]="faMoon"></fa-icon> Dark Mode
+      </button>
+    </li>
+  </ul>
+</nav>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,13 @@
+<div class="region-input">
+  <div class="region-input-container" (click)="show()">
+    <span class="selected-region">{{selectedRegion}}</span>
+    <fa-icon [icon]="faArrow"></fa-icon>
+  </div>
+  <ul *ngIf="showRegions" class="region-input-content">
+    <li *ngFor="let regionItem of regions" [value]="regionItem.value" class="region-item">
+      <div class="region-item" (click)="select(regionItem)">
+        <span>{{regionItem.label}}</span>
+      </div>
+    </li>
+  </ul>
+</div>

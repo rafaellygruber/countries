@@ -1,0 +1,14 @@
+<form [formGroup]="searchForm" class="search-form">
+
+  <div class="search-input-container">
+    <fa-icon [icon]="faSearch"></fa-icon>
+    <input formControlName="country" class="search-input" type="text" id="search-input" autocomplete="off" [placeholder]="label">
+    <label for="search-input">Search for a country</label>
+  </div>
+
+  <region (select-region)="selectRegion($event)"></region>
+</form>
+
+<loader></loader>
+
+<results [countries]="countries" (show-detail)="showDetail($event)"></results>

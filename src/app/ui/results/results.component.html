@@ -1,0 +1,17 @@
+<div class="results">
+  <div *ngIf="countries && !countries.length" class="no-results-found">
+    No results found, sorry.
+    <fa-icon [icon]="faFrown"></fa-icon>
+  </div>
+  <div *ngFor="let country of countries" class="card" (click)="showDetail.emit(country)">
+    <img [src]="country.flag" alt="{{country.name}} flag" class="card-image">
+    <div class="card-container">
+      <h4 class="card-title"><strong>{{country.name}}</strong></h4>
+      <div class="card-content">
+        <p><strong>Population:</strong> {{country.population | number}}</p>
+        <p><strong>Region:</strong> {{country.region}}</p>
+        <p><strong>Capital:</strong> {{country.capital}}</p>
+      </div>
+    </div>
+  </div>
+</div>

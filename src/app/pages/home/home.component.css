@@ -1,0 +1,71 @@
+.search-form {
+  display: block;
+  position: relative;
+}
+
+label {
+  font-size: var(--font-small);
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  top: -22px;
+  transform: translateY(0);
+  transition: all 0.2s ease-out;
+}
+
+.search-input-container {
+  color: var(--foreground-light);
+  display: inline-block;
+  position: relative;
+  width: 375px;
+}
+
+.search-input {
+  background-color: var(--background-light);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 5px var(--background-default) inset;
+  color: var(--foreground-light);
+  font-size: var(--font-small);
+  height: 40px;
+  padding: 10px 10px 10px 60px;
+  max-width: 375px;
+  width: 100%;
+}
+
+.search-input::placeholder {
+  color: var(--foreground-light);
+}
+
+.search-input:placeholder-shown+label {
+  font-size: var(--font-small);
+  opacity: 0;
+  transform: translateY(23px);
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-input-container .ng-fa-icon {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+}
+
+@media(max-width: 760px) {
+
+  .search-input-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .search-input {
+    display: block;
+    width: 100%;
+  }
+
+  .search-input {
+    margin-bottom: 10px;
+  }
+}

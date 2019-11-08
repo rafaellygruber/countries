@@ -1,0 +1,107 @@
+.detail-button {
+  background-color: var(--background-light);
+  border-radius: 4px;
+  box-shadow: var(--background-shadow);
+  color: var(--foreground-default);
+  cursor: pointer;
+  font-size: var(--font-regular);
+  font-weight: 300;
+  height: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  vertical-align: middle;
+  width: 130px;
+}
+
+.detail-button .ng-fa-icon {
+  margin-right: 10px;
+}
+
+.detail-not-found {
+  color: var(--foreground-default);
+  font-size: var(--font-regular);
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.detail-image-container {
+  display: inline-block;
+  width: 50%;
+}
+
+.detail-image {
+  width: 100%;
+  min-width: 315px;
+}
+
+.detail-content {
+  margin-left: 50px;
+}
+
+.detail-info {
+  display: flex;
+}
+
+.detail-content,
+.detail-info-content,
+.detail-border {
+  color: var(--foreground-default);
+}
+
+.detail-title {
+  color: var(--foreground-default);
+  font-size: var(--font-giant);
+}
+
+.detail-info-content {
+  flex: 1;
+  font-size: var(--font-regular);
+}
+
+.border-button {
+  margin: 0 10px 10px 0;
+  font-size: var(--font-small);
+  overflow: hidden;
+}
+
+.detail-border {
+  display: inline-block;
+}
+
+.border-countries {
+  max-width: 600px;
+}
+
+.border-countries-text {
+  display: inline;
+  margin-right: 10px;
+}
+
+@media(max-width: 760px) {
+  .detail-container,
+  .detail-info {
+    display: block;
+  }
+  .detail-content {
+    margin: 20px 0 0 0;
+  }
+  .detail-image-container,
+  .border-countries {
+    width: 100%;
+  }
+  .detail-image {
+    min-width: 100%;
+  }
+  .border-button {
+    margin: 0 5px 5px 0;
+    width: 100px;
+  }
+  .border-countries-text {
+    display: block;
+    margin-right: 10px;
+  }
+}

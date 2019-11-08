@@ -1,0 +1,64 @@
+.region-input {
+  border-radius: 4px;
+  box-shadow: 0 0 5px var(--background-default) inset;
+  color: var(--foreground-light);
+  font-size: var(--font-small);
+  float: right;
+  position: relative;
+  width: 200px;
+}
+
+.region-input-container {
+  background-color: var(--background-light);
+  border-radius: 4px;
+  cursor: pointer;
+  height: 60px;
+  margin-bottom: 5px;
+}
+
+.region-input-container .ng-fa-icon {
+  float: right;
+  line-height: 60px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+.selected-region {
+  line-height: 60px;
+  margin-left: 16px;
+  vertical-align: middle;
+}
+
+.region-input-content {
+  background-color: var(--background-light);
+  border-radius: 4px;
+  font-size: var(--font-small);
+  float: right;
+  margin: 0;
+  padding: 5px 0 3px 7px;
+  position: absolute;
+  width: 200px;
+}
+
+.region-input:focus {
+  outline: none
+}
+
+.region-item {
+  cursor: pointer;
+  display: block;
+  padding: 3px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+@media(max-width: 760px) {
+
+  .region-input {
+    float: left;
+  }
+
+  .region-input {
+    margin-bottom: 10px;
+  }
+}
