@@ -14,6 +14,7 @@
     cursor: pointer;
     display: inline-block;
     margin-top: 20px;
+    max-width: 265px;
   }
   
   .card:hover {
@@ -54,6 +55,7 @@
 
     .card {
       display: block;
+      max-width: 100%;
       width: 100%;
       overflow: hidden;
     }
